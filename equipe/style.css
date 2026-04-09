@@ -5,12 +5,13 @@
     --roxo: #AC46FF;
     --rosa: #FF7BF1;
     --cinza: #D9D9D9;
+    --branco: #ffffff;
 }
 
 body {
     margin: 0;
     font-family: "Poppins", sans-serif;
-    background: #ffffff;
+    background: var(--branco)
 }
 
 
@@ -20,11 +21,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
+    color: var(--branco);
 }
 
 header nav a {
-    color: var(--azul-claro);
+    color: var(--branco)
     margin-left: 20px;
     text-decoration: none;
     font-weight: 500;
