@@ -1,22 +1,27 @@
 
 :root {
-    --azul-claro: #9DD6F2;
+    /* --azul-claro: #9DD6F2;
     --azul-escuro: #0F3266;
     --roxo: #AC46FF;
     --rosa: #FF7BF1;
-    --cinza: #D9D9D9;
+    --cinza: #D9D9D9; */
     --branco: #ffffff;
+    --vermelho: #b60b19;
+    --vermelho-claro: #BF364F;
+    --grafite: #262626;
+    --preto: #000000;
+    --branco-escuro: #F2F2F2;
 }
 
 body {
     margin: 0;
     font-family: "Poppins", sans-serif;
-    background: var(--branco)
+    background: var(--branco);
 }
 
 
 header {
-    background: var(--azul-escuro);
+    background: var(--grafite);
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -25,20 +30,20 @@ header {
 }
 
 header nav a {
-    color: var(--branco)
+    color: var(--branco);
     margin-left: 20px;
     text-decoration: none;
     font-weight: 500;
 }
 
 header nav a:hover {
-    color: var(--roxo);
+    color: var(--vermelho-claro);
 }
 
 
 .hero {
     height: 60vh;
-    background: linear-gradient(135deg, var(--azul-escuro), var(--roxo));
+    background: linear-gradient(10deg, var(--vermelho), var(--vermelho-claro));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,7 +64,7 @@ header nav a:hover {
 
 .btn {
     margin-top: 20px;
-    background: var(--rosa);
+    background: var(--grafite);
     padding: 12px 25px;
     color: white;
     border-radius: 8px;
@@ -70,7 +75,7 @@ header nav a:hover {
 }
 
 .btn:hover {
-    background: var(--roxo);
+    background: var(--preto);
 }
 
 
@@ -81,7 +86,7 @@ section {
 }
 
 h2 {
-    color: var(--azul-escuro);
+    color: var(--vermelho-claro);
     margin-bottom: 20px;
 }
 
@@ -96,7 +101,7 @@ h2 {
     background: var(--cinza);
     padding: 25px;
     border-radius: 12px;
-    border-left: 6px solid var(--roxo);
+    border-left: 6px solid var(--vermelho);
     transition: 0.3s;
 }
 
@@ -107,7 +112,7 @@ h2 {
 
 
 .footer {
-    background: var(--azul-escuro);
+    background: var(--grafite);
     color: white;
     text-align: center;
     padding: 25px 10px;
