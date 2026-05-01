@@ -231,20 +231,63 @@ h2 {
 }
 
 #contato {
+    background: linear-gradient(to bottom, #ffffff, #f4f4f4);
     text-align: center;
 }
 
-#contato a {
-    color: var(--vermelho);
+.contato-box {
+    max-width: 500px;
+    margin: 30px auto;
+    background: var(--branco);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    border-top: 4px solid var(--vermelho);
+}
+
+.contato-box p {
+    margin-bottom: 10px;
+}
+
+
+.contato-links {
+    margin-top: 15px;
+}
+
+.contato-links a {
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 10px 18px;
+    background: var(--grafite);
+    color: white;
+    border-radius: 8px;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.contato-links a:hover {
+    background: var(--vermelho);
+    transform: translateY(-3px);
 }
 
 .footer {
-    background: var(--grafite);
-    color: white;
+    background: linear-gradient(90deg, #1a1a1a, #262626);
+    color: #ddd;
     text-align: center;
-    padding: 25px;
+    padding: 30px 20px;
     margin-top: 50px;
+    font-size: 0.9rem;
+}
+
+.footer p:first-child {
+    font-weight: bold;
+    color: white;
+}
+
+.footer p:last-child {
+    opacity: 0.7;
+    font-size: 0.8rem;
+    margin-top: 5px;
 }
 
