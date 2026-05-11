@@ -13,7 +13,7 @@ const risco = document.getElementById("risco");
 
 const classificacao = document.getElementById("classificacao");
 
-/* PREVIEW */
+/* preview da imagem enviada */
 
 imageInput.addEventListener("change", function() {
 
@@ -36,7 +36,7 @@ imageInput.addEventListener("change", function() {
 
 });
 
-/* IA */
+/* análise da "IA" */
 
 analisarBtn.addEventListener("click", function(){
 
@@ -56,6 +56,8 @@ analisarBtn.addEventListener("click", function(){
         loading.style.display = "none";
 
         resultado.style.display = "block";
+
+        /* resultado aleatório */
 
         const chance = Math.floor(Math.random() * 100);
 
@@ -78,3 +80,4 @@ analisarBtn.addEventListener("click", function(){
     }, 3000);
 
 });
+

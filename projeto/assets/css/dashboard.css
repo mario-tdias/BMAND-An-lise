@@ -1,0 +1,186 @@
+.dashboard-page {
+    min-height: 100vh;
+
+    padding: 120px 8%;
+
+    background:
+        radial-gradient(circle at top left, rgba(172, 70, 255, 0.2), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(255, 123, 241, 0.2), transparent 30%),
+        #f7fbff;
+}
+
+.dashboard-top {
+    text-align: center;
+
+    margin-bottom: 60px;
+}
+
+.dashboard-top h1 {
+    font-size: 3rem;
+
+    margin-bottom: 15px;
+
+    color: var(--azul-escuro);
+}
+
+.dashboard-top p {
+    color: #666;
+
+    font-size: 1.05rem;
+}
+
+.dashboard-grid {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 25px;
+}
+
+.dash-card {
+    background: var(--branco);
+
+    padding: 35px;
+
+    border-radius: 24px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s ease;
+
+    border: 1px solid rgba(0,0,0,0.03);
+}
+
+.dash-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.dash-card i {
+    font-size: 2rem;
+
+    color: var(--roxo);
+
+    margin-bottom: 20px;
+}
+
+.dash-card h3 {
+    font-size: 2.2rem;
+
+    margin-bottom: 10px;
+
+    color: var(--azul-escuro);
+}
+
+.dash-card span {
+    color: #666;
+
+    font-size: 0.95rem;
+}
+
+.dashboard-content {
+    margin-top: 60px;
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 30px;
+}
+
+.grafico-box,
+.atividade-box {
+    background: var(--branco);
+
+    padding: 35px;
+
+    border-radius: 24px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.grafico-box h2,
+.atividade-box h2 {
+    color: var(--azul-escuro);
+
+    margin-bottom: 10px;
+}
+
+.grafico {
+    height: 320px;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.bar {
+    width: 100%;
+
+    background: linear-gradient(
+        to top,
+        var(--roxo),
+        var(--rosa)
+    );
+
+    border-radius: 12px 12px 0 0;
+
+    transition: 0.3s;
+}
+
+.bar:hover {
+    opacity: 0.8;
+
+    transform: scaleY(1.03);
+}
+
+.atividade {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid #eee;
+}
+
+.atividade p {
+    color: #444;
+}
+
+.status {
+    width: 14px;
+
+    height: 14px;
+
+    border-radius: 50%;
+}
+
+.sucesso {
+    background: #00d26a;
+
+    box-shadow: 0 0 10px rgba(0, 210, 106, 0.5);
+}
+
+.alerta {
+    background: #ffb800;
+
+    box-shadow: 0 0 10px rgba(255, 184, 0, 0.5);
+}
+
+.perigo {
+    background: #ff3b3b;
+
+    box-shadow: 0 0 10px rgba(255, 59, 59, 0.5);
+}
