@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -19,7 +20,7 @@
 
         <div class="logo">
             <h2>BMAND</h2>
-            <span>Sistema Inteligente de Diagnóstico Médico</span>
+            <span>Sistema Inteligente de Apoio ao Diagnóstico Médico</span>
         </div>
 
         <nav>
@@ -27,14 +28,15 @@
         </nav>
 
     </header>
+
     <main>
 
         <section class="analise-page">
 
-            <h1>Análise Inteligente de Mamografia</h1>
+            <h1>Apoio à Análise de Mamografia</h1>
 
             <p>
-                Envie uma imagem médica para que a IA realize a análise automática.
+                Envie uma imagem para que o sistema gere indicadores auxiliares que podem apoiar a avaliação de um profissional de saúde.
             </p>
 
             <div class="upload-box">
@@ -42,14 +44,13 @@
                 <input type="file" id="imageInput" accept="image/*">
 
                 <div class="preview-container">
-
                     <img id="preview" src="" alt="">
-
                 </div>
 
                 <button id="analisarBtn">
-                    Analisar Imagem
+                    Gerar Análise
                 </button>
+
                 <a href="../login/login.html" class="dashboard-btn">
                     Ver Dashboard
                 </a>
@@ -66,22 +67,22 @@
 
             <div class="resultado" id="resultado">
 
-                <h2>Resultado da IA</h2>
+                <h2>Indicadores da Análise (Apoio)</h2>
 
                 <div class="resultado-cards">
 
                     <div class="resultado-card">
-                        <span>Risco Detectado</span>
+                        <span>Risco Estimado</span>
                         <strong id="risco">87%</strong>
                     </div>
 
                     <div class="resultado-card">
-                        <span>Confiança</span>
+                        <span>Nível de Confiança do Modelo</span>
                         <strong>95%</strong>
                     </div>
 
                     <div class="resultado-card">
-                        <span>Classificação</span>
+                        <span>Classificação Preliminar</span>
                         <strong id="classificacao">
                             Suspeita
                         </strong>
@@ -89,12 +90,21 @@
 
                 </div>
 
+                <p class="aviso">
+                    ⚠️ Este sistema é apenas uma ferramenta de apoio e não realiza diagnóstico médico.
+                    Os resultados apresentados são estimativas baseadas em inteligência artificial
+                    e devem ser analisados exclusivamente por profissionais de saúde qualificados.
+                </p>
+
             </div>
 
         </section>
+
     </main>
 
     <script src="../../assets/js/analise.js"></script>
+
 </body>
 
 </html>
+```
