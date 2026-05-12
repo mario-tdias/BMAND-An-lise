@@ -12,121 +12,125 @@
     <link rel="stylesheet" href="../../assets/css/dashboard.css">
     <link rel="stylesheet" href="../../assets/css/global.css">
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
 <body>
 
-<header>
+    <header>
 
-    <div class="logo">
-        <h2>BMAND</h2>
-        <span>Painel Médico Inteligente</span>
-    </div>
-
-    <nav>
-
-        <a href="../../index.html">Início</a>
-
-        <a href="../analise/analise.html">
-            Análise IA
-        </a>
-
-    </nav>
-
-</header>
-
-<section class="dashboard-page">
-
-    <div class="dashboard-top">
-
-        <h1>Dashboard Médico</h1>
-
-        <p>
-            Monitoramento inteligente de análises realizadas pela IA.
-        </p>
-
-    </div>
-
-    <div class="dashboard-grid">
-
-        <div class="dash-card">
-            <i class="fas fa-microscope"></i>
-            <h3>1.284</h3>
-            <span>Exames Analisados</span>
+        <div class="logo">
+            <h2>BMAND</h2>
+            <span>Painel Médico Inteligente</span>
         </div>
 
-        <div class="dash-card">
-            <i class="fas fa-brain"></i>
-            <h3>95%</h3>
-            <span>Precisão da IA</span>
+        <nav>
+
+            <a href="../../index.html">Início</a>
+
+            <a href="../analise/analise.html">
+                Análise IA
+            </a>
+
+            <a href="#" id="logoutBtn">
+                Sair
+            </a>
+
+        </nav>
+
+    </header>
+
+    <section class="dashboard-page">
+
+        <div class="dashboard-top">
+
+            <h1>Dashboard Médico</h1>
+
+            <p>
+                Monitoramento inteligente de análises realizadas pela IA.
+            </p>
+
         </div>
 
-        <div class="dash-card">
-            <i class="fas fa-clock"></i>
-            <h3>2.4s</h3>
-            <span>Tempo Médio</span>
+        <div class="dashboard-grid">
+
+            <div class="dash-card">
+                <i class="fas fa-microscope"></i>
+                <h3>1.284</h3>
+                <span>Exames Analisados</span>
+            </div>
+
+            <div class="dash-card">
+                <i class="fas fa-brain"></i>
+                <h3>95%</h3>
+                <span>Precisão da IA</span>
+            </div>
+
+            <div class="dash-card">
+                <i class="fas fa-clock"></i>
+                <h3>2.4s</h3>
+                <span>Tempo Médio</span>
+            </div>
+
+            <div class="dash-card">
+                <i class="fas fa-hospital"></i>
+                <h3>12</h3>
+                <span>Hospitais Integrados</span>
+            </div>
+
         </div>
 
-        <div class="dash-card">
-            <i class="fas fa-hospital"></i>
-            <h3>12</h3>
-            <span>Hospitais Integrados</span>
-        </div>
+        <div class="dashboard-content">
 
-    </div>
+            <div class="grafico-box">
 
-    <div class="dashboard-content">
+                <h2>Análises da Semana</h2>
 
-        <div class="grafico-box">
+                <div class="grafico">
 
-            <h2>Análises da Semana</h2>
+                    <div class="bar" style="height: 35%;"></div>
+                    <div class="bar" style="height: 70%;"></div>
+                    <div class="bar" style="height: 55%;"></div>
+                    <div class="bar" style="height: 95%;"></div>
+                    <div class="bar" style="height: 65%;"></div>
+                    <div class="bar" style="height: 100%;"></div>
+                    <div class="bar" style="height: 80%;"></div>
 
-            <div class="grafico">
+                </div>
 
-                <div class="bar" style="height: 35%;"></div>
-                <div class="bar" style="height: 70%;"></div>
-                <div class="bar" style="height: 55%;"></div>
-                <div class="bar" style="height: 95%;"></div>
-                <div class="bar" style="height: 65%;"></div>
-                <div class="bar" style="height: 100%;"></div>
-                <div class="bar" style="height: 80%;"></div>
+            </div>
+
+            <div class="atividade-box">
+
+                <h2>Últimos Resultados</h2>
+
+                <div class="atividade">
+                    <span class="status sucesso"></span>
+                    <p>Paciente #1024 — Benigno</p>
+                </div>
+
+                <div class="atividade">
+                    <span class="status alerta"></span>
+                    <p>Paciente #1025 — Suspeita</p>
+                </div>
+
+                <div class="atividade">
+                    <span class="status perigo"></span>
+                    <p>Paciente #1026 — Alto Risco</p>
+                </div>
+
+                <div class="atividade">
+                    <span class="status sucesso"></span>
+                    <p>Paciente #1027 — Benigno</p>
+                </div>
 
             </div>
 
         </div>
 
-        <div class="atividade-box">
-
-            <h2>Últimos Resultados</h2>
-
-            <div class="atividade">
-                <span class="status sucesso"></span>
-                <p>Paciente #1024 — Benigno</p>
-            </div>
-
-            <div class="atividade">
-                <span class="status alerta"></span>
-                <p>Paciente #1025 — Suspeita</p>
-            </div>
-
-            <div class="atividade">
-                <span class="status perigo"></span>
-                <p>Paciente #1026 — Alto Risco</p>
-            </div>
-
-            <div class="atividade">
-                <span class="status sucesso"></span>
-                <p>Paciente #1027 — Benigno</p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
+    </section>
+    <script src="../../assets/js/login.js"></script>
 </body>
+
 </html>
